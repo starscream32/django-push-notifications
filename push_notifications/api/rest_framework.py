@@ -33,7 +33,7 @@ class DeviceSerializerMixin(ModelSerializer):
 	class Meta:
 		fields = (
 			"id", "name", "application_id", "registration_id", "device_id",
-			"active", "date_created"
+			"active", "date_created", "user",
 		)
 		read_only_fields = ("date_created",)
 
